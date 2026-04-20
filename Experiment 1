@@ -1,0 +1,12 @@
+nums = [int(input(f"Enter number {i+1}: ")) for i in range(5)]
+
+print("List:", nums)
+
+print("Max:", max(nums))
+print("Min:", min(nums))
+
+nums = sorted(nums)
+print("Sorted:", nums)
+
+nums = nums[::-1]
+print("Reversed:", nums)
