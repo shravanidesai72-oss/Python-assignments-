@@ -1,0 +1,14 @@
+data = {}
+
+for i in range(3):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    data[key] = value
+
+print("Dictionary:", data)
+
+data.update({"new_key": "new_value"})
+print("After Update:", data)
+
+del data[key]
+print("After Deletion:", data)
