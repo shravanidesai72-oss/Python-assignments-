@@ -1,0 +1,14 @@
+def circle(r): return 3.14*r*r
+def rect(l,w): return l*w
+def tri(b,h): return 0.5*b*h
+
+functions = {
+    1: circle,
+    2: rect,
+    3: tri
+}
+
+choice = int(input("1.Circle 2.Rect 3.Triangle: "))
+values = list(map(float, input("Enter values: ").split()))
+
+print("Area:", functions[choice](*values))
