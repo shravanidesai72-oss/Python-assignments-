@@ -1,0 +1,14 @@
+class Person:
+    def details(self):
+        print("Person Details")
+
+class Employee(Person):
+    def details(self):
+        print("Employee Details")
+
+class Manager(Employee):
+    def details(self):
+        print("Manager Details")
+
+m = Manager()
+m.details()
