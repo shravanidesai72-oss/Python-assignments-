@@ -1,0 +1,15 @@
+def convert(c):
+    return (c * 9/5) + 32
+
+if __name__ == "__main__":
+    print(convert(25))
+
+
+### main.py
+
+python
+import temperature.celsius_to_fahrenheit as cf
+
+temp = float(input("Enter Celsius: "))
+print("Fahrenheit:", cf.convert(temp))
+
