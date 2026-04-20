@@ -1,0 +1,15 @@
+class Book:
+    def __init__(self, title):
+        self.title = title
+        self.available = True
+
+    def status(self):
+        print(self.title, "-", "Available" if self.available else "Not Available")
+
+    def toggle(self):
+        self.available = not self.available
+
+b1 = Book("Data Structures")
+b1.status()
+b1.toggle()
+b1.status()
